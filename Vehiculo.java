@@ -2,7 +2,7 @@
  *
  * @author molgu
  */
-public class Vehiculo {
+public abstract class Vehiculo {
     private String marca;
     private String color;
     
@@ -31,9 +31,7 @@ public class Vehiculo {
      * Activa el sistema de propulsión del vehiculo
      * @return String que indica la operación realizada
     */
-    public String avanza() {
-        return "avanzando";
-    }
+    public abstract String avanza();
     
     /**
      * Activa el sistema de frenado del vehiculo
@@ -48,8 +46,6 @@ public class Vehiculo {
      * Activa el sistema de giro del vehiculo
      * @return String que indica la operación realizada
     */
-    public String vira() {
-        return "virando";
-    };
+    public abstract String vira();
     
 }

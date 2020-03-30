@@ -13,6 +13,10 @@ public class ClasePrincipal {
         
         vehiculo=auto;
         System.out.println(vehiculo.vira());
+        
+        System.out.print(auto.avanza() + " ");
+        System.out.println(barco.avanza());
+        
     }
     
 }
