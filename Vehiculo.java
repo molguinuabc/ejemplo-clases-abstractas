@@ -1,21 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
- 
-
 /**
  *
  * @author molgu
  */
 public class Vehiculo {
     private String marca;
-
-    public Vehiculo() {
-        this.marca = "";
-        this.color = "";
-    }
+    private String color;
+    
     public Vehiculo(String marca, String color) {
         this.marca = marca;
         this.color = color;
@@ -23,10 +13,6 @@ public class Vehiculo {
 
     public String getMarca() {
         return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
     }
 
     public String getColor() {
@@ -40,23 +26,30 @@ public class Vehiculo {
     public void setColor(String color) {
         this.color = color;
     }
-    private String color;
     
     /**
-     Activa el sistema de propulsión del vehiculo
+     * Activa el sistema de propulsión del vehiculo
      * @return String que indica la operación realizada
     */
     public String avanza() {
         return "avanzando";
     }
     
+    /**
+     * Activa el sistema de frenado del vehiculo
+     * @return String que indica la operación realizada
+    */
+    
     public String frena() {
         return "frenando";
     };
+    
+    /**
+     * Activa el sistema de giro del vehiculo
+     * @return String que indica la operación realizada
+    */
     public String vira() {
         return "virando";
     };
-    
-    
     
 }

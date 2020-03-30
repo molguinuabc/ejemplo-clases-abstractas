@@ -58,5 +58,5 @@ target4.name=Vehiculo
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
-target4.x=300
-target4.y=60
+target4.x=250
+target4.y=50
